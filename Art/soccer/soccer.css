@@ -1,0 +1,80 @@
+body,html{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-sizing:border-box;
+    background:url("stadium.jpg") no-repeat fixed center;
+    z-index:-1;
+    cursor: url("https://downloads.totallyfreecursors.com/cursor_files/adidasfootballboot.cur"), url("https://downloads.totallyfreecursors.com/thumbnails/adidas-football-boot.gif"), auto;
+}
+
+#ball{
+    width:5%;
+    height:50px;
+    margin:auto;
+    border-radius:50%;
+    background:url("ball.png") no-repeat center;
+    background-size: contain;
+    /* animation:animate 3s linear */
+    /* z-index:1; */
+   
+}
+#ball:hover{
+    
+    animation:animate 3s linear;
+    
+}
+
+
+
+
+@keyframes animate {
+    0% {
+      transform: rotate(0deg);
+     
+    }
+    8%{
+        transform:translate(250px,400px) rotate(90deg)
+    }
+    16%{
+        transform:translate(500px,200px) rotate(180deg)
+    }
+    24%{
+        transform:translate(750px,0px) rotate(270deg)
+    }
+   32% {
+      transform:translate(500px,-200px) rotate(360deg);
+    
+    }
+    40%{
+        transform:translate(250px,-400px) rotate(450deg)
+    }
+    
+    48%{
+        transform:translate(0px,0px) rotate(540deg)
+    }
+    56%{
+        transform:translate(-250px,400px) rotate(90deg)
+    }
+    64%{
+        transform:translate(-500px,200px) rotate(180deg)
+    }
+    72%{
+        transform:translate(-750px,0) rotate(270deg)
+    }
+    80%{
+        transform:translate(-500px,-200px) rotate(360deg);
+    }
+    88%{
+        transform:translate(-250px,-400px) rotate(540deg)
+    }
+    100%{
+        transform:translate(0px,0px) rotate(540deg)
+    }
+  }
+ 
+  
